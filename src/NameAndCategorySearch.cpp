@@ -23,3 +23,17 @@ void searchFacilityByName(const vector<Facility>, const string& name){
     count << "Matches: " << count << endl;
 }
 
+
+void searchFacilityByCategory(const vector<Facility>, const string& category){
+    string target = normalizeString(category);
+    int count = 0;
+
+    for (const auto& fac : facilities) {
+      if (normalizeString(fac.getCategory()) == target) { 
+          fac.display();
+          count++;
+            
+        }
+    }
+    count << "Matches: " << count << endl;
+}
