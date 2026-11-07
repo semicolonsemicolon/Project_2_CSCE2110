@@ -26,8 +26,11 @@ private:
 
     public:
 
-    int getCapacity();
-    int getEntries;
+    bool insert(const string); 
+    bool search(const string) const;
+
+    int getCapacity() const;
+    int getEntries() const;
 
 };
 
