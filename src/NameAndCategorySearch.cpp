@@ -5,35 +5,35 @@
 #include <fstream>
 #include <sstream>
 #include <cctype>
-#include "Facility.h"
+#include "../include/FacilityRecords.h"
 
 using namespace std;
 
-void searchFacilityByName(const vector<Facility>, const string& name){
-    string target = normalizeString(name);
+void searchFacilityByName(const vector<Facility> facilities, const string& name){
+    string target = name; //normalizeString(name);
     int count = 0;
 
     for (const auto& fac : facilities) {
-      if (normalizeString(fac.getName()) == target) { 
+      if (fac.getName() == target) { //(normalizeString(fac.getName()) == target) { 
           fac.display();
           count++;
             
         }
     }
-    count << "Matches: " << count << endl;
+    cout << "Matches: " << count << endl;
 }
 
 
-void searchFacilityByCategory(const vector<Facility>, const string& category){
-    string target = normalizeString(category);
+void searchFacilityByCategory(const vector<Facility> facilities, const string& category){
+    string target = category; //normalizeString(category);
     int count = 0;
 
     for (const auto& fac : facilities) {
-      if (normalizeString(fac.getCategory()) == target) { 
+      if (fac.getCategory() == target) {//(normalizeString(fac.getCategory()) == target) { 
           fac.display();
           count++;
             
         }
     }
-    count << "Matches: " << count << endl;
+    cout << "Matches: " << count << endl;
 }
