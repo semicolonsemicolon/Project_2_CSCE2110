@@ -23,7 +23,7 @@ public:
 
 string getName() const;
 string getID () const;
-string getBuilding const;
+string getBuilding () const;
 string getCategory() const;
 
 void display() const;
