@@ -10,3 +10,5 @@ Pratyush Dahal:
   -department statistics
 
 Cesar Garcia:
+  -hash table
+  -facility records
