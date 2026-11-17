@@ -40,7 +40,6 @@ int main(int argc, char* argv[]) {
 		cout << "16. Facility category report" << endl;
 		cout << "17. Graph connectivity report" << endl;
 		cout << "18. Exit" << endl;
-		*/
 		
 		// Get choice
 		cout << "\nEnter option(1-18): ";
