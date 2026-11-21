@@ -4,6 +4,8 @@ Ethan Rhodes:
   -shortest path
   -connectivity report
 
+I made the graph system through the CampusGraph class which represents all of the buildings and their connections. I also made the pathfinding functions to find all reachable buildings and the distance between two buildings using BFS. I made display functions to show graph adjacency and a connectivity report. I also wrote main.cpp, including the command line argument, input handling, and switch case.
+
 Pratyush Dahal:
   -department tree
   -traversals
